@@ -15,6 +15,160 @@
     font-family: Arial, Helvetica, sans-serif;
     border-radius: 50px;
     z-index: 900;
+   
+    
 }
+
+
+.jogador2{
+    background-color: blue;
+    width: 50px;
+    height: 50px; 
+    text-align: center;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 50px;
+    z-index: 900;
+    position: absolute;
+   
+}
+
+
+.jogador3{
+    background-color: blue;
+    width: 50px;
+    height: 50px; 
+    text-align: center;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 50px;
+    z-index: 900;
+    position: absolute;
+    
+}
+
+.jogador4{
+    background-color: blue;
+    width: 50px;
+    height: 50px; 
+    text-align: center;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 50px;
+    z-index: 900;
+    position: absolute;
+  
+}
+
+
+.jogador5{
+    background-color: blue;
+    width: 50px;
+    height: 50px; 
+    text-align: center;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 50px;
+    z-index: 900;
+    position: absolute;
+    
+}
+
+
+.jogador6{
+    background-color: blue;
+    width: 50px;
+    height: 50px; 
+    text-align: center;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 50px;
+    z-index: 900;
+    position: absolute;
+   
+}
+
+
+.jogador7{
+    background-color: blue;
+    width: 50px;
+    height: 50px; 
+    text-align: center;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 50px;
+    z-index: 900;
+    position: absolute;
+    
+}
+
+
+.jogador8{
+    background-color: blue;
+    width: 50px;
+    height: 50px; 
+    text-align: center;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 50px;
+    z-index: 900;
+    position: absolute;
+   
+}
+
+.jogador9{
+    background-color: blue;
+    width: 50px;
+    height: 50px; 
+    text-align: center;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 50px;
+    z-index: 900;
+    position: absolute;
+    
+}
+
+.jogador10{
+    background-color: blue;
+    width: 50px;
+    height: 50px; 
+    text-align: center;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 50px;
+    z-index: 900;
+    position: absolute;
+    
+}
+
+.jogador11{
+    background-color: blue;
+    width: 50px;
+    height: 50px; 
+    text-align: center;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 50px;
+    z-index: 900;
+    position: absolute;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+   
+
+
+
+
 
 
