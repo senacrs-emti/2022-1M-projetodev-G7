@@ -1,3 +1,4 @@
+
 dragElement(document.getElementById("jgA1"));
 
 function dragElement(elmnt) {
@@ -955,3 +956,8 @@ function dragElement(elmnt) {
     document.onmousemove = null;
   }
 }
+
+$('.btn').click(function () {
+    $(this).toggleClass('active');
+  });
+   origin/header
