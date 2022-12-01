@@ -965,7 +965,7 @@ function toujgA1() {
   el.addEventListener('touchend', handleEnd);
   el.addEventListener('touchcancel', handleCancel);
   el.addEventListener('touchmove', handleMove);
-  log('Initialized');
+  
 }
 
 document.addEventListener("DOMContentLoaded", toujgA1);
@@ -975,16 +975,13 @@ const ongoingTouches = [];
 
 function handleStart() {
   evt.preventDefault();
-  log('touchstart.');
   const el = document.getElementById('jgA1');
   const ctx = el.getContext('2d');
   const touches = evt.changedTouches;
 
   for (let i = 0; i < touches.length; i++) {
-    log(`touchstart: ${i}.`);
     ongoingTouches.push(copyTouch(touches[i]));
     const color = colorForTouch(touches[i]);
-    log(`color of touch with id ${touches[i].identifier} = ${color}`);
     ctx.beginPath();
     ctx.arc(touches[i].pageX, touches[i].pageY, 4, 0, 2 * Math.PI, false);  // a circle at the start
     ctx.fillStyle = color;
@@ -995,7 +992,6 @@ function handleStart() {
 
 function handleEnd(evt) {
   evt.preventDefault();
-  log("touchend");
   const el = document.getElementById('jgA1');
   const ctx = el.getContext('2d');
   const touches = evt.changedTouches;
@@ -1013,7 +1009,6 @@ function handleEnd(evt) {
       ctx.fillRect(touches[i].pageX - 4, touches[i].pageY - 4, 8, 8);  // and a square at the end
       ongoingTouches.splice(idx, 1);  // remove it; we're done
     } else {
-      log('can\'t figure out which touch to end');
     }
   
   }
@@ -1022,7 +1017,6 @@ function handleEnd(evt) {
 
 function handleCancel(evt) {
   evt.preventDefault();
-  log('touchcancel.');
   const touches = evt.changedTouches;
 
   for (let i = 0; i < touches.length; i++) {
@@ -1042,12 +1036,8 @@ function handleMove(evt) {
     const color = colorForTouch(touches[i]);
     const idx = ongoingTouchIndexById(touches[i].identifier);
 
-    if (idx >= 0) {
-      log(`continuing touch ${idx}`);
-      ctx.beginPath();
-      log(`ctx.moveTo( ${ongoingTouches[idx].pageX}, ${ongoingTouches[idx].pageY} );`);
+    if (idx >= 0) {      ctx.beginPath();
       ctx.moveTo(ongoingTouches[idx].pageX, ongoingTouches[idx].pageY);
-      log(`ctx.lineTo( ${touches[i].pageX}, ${touches[i].pageY} );`);
       ctx.lineTo(touches[i].pageX, touches[i].pageY);
       ctx.lineWidth = 4;
       ctx.strokeStyle = color;
@@ -1055,7 +1045,8 @@ function handleMove(evt) {
 
       ongoingTouches.splice(idx, 1, copyTouch(touches[i]));  // swap in the new touch record
     } else {
-      log('can\'t figure out which touch to continue');
     }
   }
 }
+
+
