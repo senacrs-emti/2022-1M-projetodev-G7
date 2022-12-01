@@ -463,4 +463,22 @@ header{
     top: 545px;     
 }
 
+/*FOOTER*/
+footer{
+    background-color: black;
+    padding: 45px;
+    height: 310px;
+    margin-top: 10px;
+}
+
+.text-footer{
+    padding-top: 5px;
+    background-color: rgb(24, 24, 24);
+    display: inline-block;
+    border-radius: 20px;
+    width: 30%;
+    height: 230px;
+    float: left;
+    margin-left: 2%;
+}
 
